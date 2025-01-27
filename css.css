@@ -1,0 +1,45 @@
+/* Estilo general */
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: url('fotos/fondo.jpg'); /* Imagen de fondo */
+        background-size: cover;
+        backdrop-filter: blur(3px); /* Desenfoque del fondo */
+        -webkit-backdrop-filter: blur(10px); /* Compatibilidad con WebKit */
+        font-family: 'Poppins', sans-serif; /* Fuente redonda y moderna */
+}
+
+/* Contenedor principal */
+#mods, #minecraft, #discord {
+    display: inline-block;
+    margin: 0 30px; /* Separación entre las imágenes */
+}
+
+/* Imágenes */
+img {
+    width: 550px; /* Ajusta el tamaño de las imágenes */
+    height: 660px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Animaciones al pasar el cursor */
+img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+#mods span, #minecraft span, #discord span {
+    margin-left: 200px;
+    display: block;
+    margin-top: 30px;
+    font-size: 50px; /* Tamaño grande */
+    font-weight: 700; /* Letra gruesa */
+    color: #fff;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif; /* Fuente redonda y moderna */
+}
